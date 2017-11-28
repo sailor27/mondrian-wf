@@ -1,0 +1,103 @@
+*:not(body):not(html):not(.double):not(.wrapper){
+  box-sizing: border-box;
+  border: 1px dashed #000ffe;
+}
+
+
+/*media queries section*/
+
+/*phone*/
+@media screen and (max-width:599px) {
+  body{
+    background-color: pink;
+    height: 100vh;
+  }
+
+  .columns {
+    width: 90vw;
+    margin: 5vh auto;
+  }
+
+  .col-1{
+    height: 40vh;
+  }
+
+  .col-2{
+    height:20vh;
+  }
+
+  .col-3 {
+    height: 20vh;
+  }
+}
+
+/*tablet*/
+@media screen and (min-width:600px) and (max-width: 1199px) {
+  body{
+    background-color: orange;
+  }
+  .col-1{
+    height: 40vh;
+    width: 90vw;
+    margin: 5vh auto;
+    clear: both;
+  }
+
+  .double {
+    height: 40vh;
+    width: 90vw;
+    margin: auto;
+
+  }
+  .col-2{
+    width: 47.5%;
+    margin-right: 5%;
+    height: 100%;
+    float: left;
+  }
+
+  .col-3{
+    width: 47.5%;
+    height: 100%;
+    float: left;
+  }
+
+}
+
+/*desktop*/
+@media screen and (min-width:1200px){
+  body{
+    background-color: lightblue;
+    margin: 1.5vw;
+  }
+
+  .wrapper {
+    margin: 5vh auto;
+    height: 90vh;
+  }
+
+  .double {
+    height: 100%;
+    width: 30vw;
+    float: right;
+
+  }
+
+  .col-1{
+    height: 90vh;
+    width: 65vw;
+    float: left;
+  }
+
+  .col-2{
+    width: 100%;
+    height: 43.5vh;
+    margin-bottom: 3vh;
+  }
+
+  .col-3{
+    width: 100%;
+    height: 43.5vh;
+    margin: 0;
+  }
+}
